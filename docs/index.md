@@ -1,17 +1,11 @@
-# 欢迎来到我的知识库
+# Welcome to my knowledge base
 
-这里记录我的学习与思考笔记。
+A site to collect notes from my learning, thinking and exploring.
 
-## 核心板块
+## Sections
 
-* **[技术笔记](tech/index.md)**：聚焦工程落地、系统设计与工具链经验，记录问题背景、方案取舍与踩坑复盘。
-* **[学习总结](study/index.md)**：梳理概率统计、优化与机器学习原理、论文/书籍精读等。
-* **[思考随笔](thoughts/index.md)**：记录对宏观与长期规律的探索性思考。
+* **[Technical Note](tech/index.md)**：notes to summarize technical challenges
+* **[Learning Note](study/index.md)**：notes to summarize learning
+* **[Thoughts Note](thoughts/index.md)**：notes to summarize thoughts
 
----
 
-## 阅读与使用说明
-
-* **按需检索**：顶部支持关键词全文搜索，左侧侧边栏可按主题层级浏览。
-* **阶段性演进**：部分笔记会随新实践或新认知持续修订，文中会标注更新语境与边界条件。
-* **交流与纠错**：若发现公式、代码或观点有疏漏或可改进之处，欢迎通过 GitHub Issue 或 PR 交流。

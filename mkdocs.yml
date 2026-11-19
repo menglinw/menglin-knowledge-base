@@ -1,12 +1,12 @@
 site_name: Menglin Knowledge Base
-site_description: 日常技术笔记、学习总结与思考随笔
+site_description: Note for learning and thinking
 site_url: https://menglinw.github.io/menglin-knowledge-base/
 repo_url: https://github.com/menglinw/menglin-knowledge-base.git
 repo_name: menglinw/menglin-knowledge-base
 
 theme:
   name: material
-  language: zh
+  language: en
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
@@ -32,30 +32,30 @@ theme:
     - content.code.copy        # 代码块一键复制
 
 nav:
-  - 首页: index.md
-  - 技术笔记:
-      - 导读: tech/index.md
-      - 模型与工程:
+  - Home: index.md
+  - Technical Note:
+      - Index: tech/index.md
+      - Model:
           - 模型训练与推理: tech/ml-engineering/distributed-training.md
-      - 数据与流水线:
+      - Data and Pipeline:
           - 特征与数据处理: tech/data-and-sql/feature-pipelines.md
       - 工具与基础设施:
           - 集群与容器实践: tech/tooling-and-infra/slurm-and-docker.md
-  - 学习总结:
-      - 导读: study/index.md
-      - 统计与数学:
-          - EM 算法推导: study/stats-and-math/em-algorithm.md
-      - 论文与书籍:
-          - 精读笔记: study/papers-and-books/attention-notes.md
-      - 课程与竞赛:
-          - 竞赛复盘: study/courses-and-competitions/competition-postmortem.md
-  - 思考随笔:
-      - 导读: thoughts/index.md
-      - 方法论:
+  - Learning Note:
+      - Index: study/index.md
+      - Math&Stats:
+          - EM algorithm: study/stats-and-math/em-algorithm.md
+      - Book&Paper:
+          - paper note: study/papers-and-books/attention-notes.md
+      - Course&Other:
+          - Other: study/courses-and-competitions/competition-postmortem.md
+  - Thoughts Note:
+      - Index: thoughts/index.md
+      - abc:
           - 问题拆解与复盘: thoughts/methodology/problem-framing.md
-      - 成长与协作:
+      - abc:
           - 影响力与跃迁: thoughts/career-and-growth/ic-to-impact.md
-      - 宏观与日常:
+      - Macro:
           - 长期观察与配置: thoughts/macro-and-life/capital-allocation-notes.md
 
 markdown_extensions:
