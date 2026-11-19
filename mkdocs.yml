@@ -1,0 +1,72 @@
+site_name: Menglin Knowledge Base
+site_description: 日常技术笔记、学习总结与思考随笔
+site_url: https://menglinw.github.io/menglin-knowledge-base/
+repo_url: https://github.com/menglinw/menglin-knowledge-base.git
+repo_name: menglinw/menglin-knowledge-base
+
+theme:
+  name: material
+  language: zh
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: 切换到深色模式
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: 切换到浅色模式
+  features:
+    - navigation.tabs          # 顶部分类标签
+    - navigation.sections      # 侧边栏按章节分组
+    - navigation.indexes       # 允许把各板块 index.md 作为分组入口页
+    - navigation.top           # 返回顶部按钮
+    - search.suggest           # 搜索联想
+    - search.highlight         # 搜索关键词高亮
+    - content.code.copy        # 代码块一键复制
+
+nav:
+  - 首页: index.md
+  - 技术笔记:
+      - 导读: tech/index.md
+      - 模型与工程:
+          - 模型训练与推理: tech/ml-engineering/distributed-training.md
+      - 数据与流水线:
+          - 特征与数据处理: tech/data-and-sql/feature-pipelines.md
+      - 工具与基础设施:
+          - 集群与容器实践: tech/tooling-and-infra/slurm-and-docker.md
+  - 学习总结:
+      - 导读: study/index.md
+      - 统计与数学:
+          - EM 算法推导: study/stats-and-math/em-algorithm.md
+      - 论文与书籍:
+          - 精读笔记: study/papers-and-books/attention-notes.md
+      - 课程与竞赛:
+          - 竞赛复盘: study/courses-and-competitions/competition-postmortem.md
+  - 思考随笔:
+      - 导读: thoughts/index.md
+      - 方法论:
+          - 问题拆解与复盘: thoughts/methodology/problem-framing.md
+      - 成长与协作:
+          - 影响力与跃迁: thoughts/career-and-growth/ic-to-impact.md
+      - 宏观与日常:
+          - 长期观察与配置: thoughts/macro-and-life/capital-allocation-notes.md
+
+markdown_extensions:
+  - admonition                 # 支持 !!! note / !!! tip / !!! warning 提示框
+  - pymdownx.details             # 支持可折叠块
+  - pymdownx.superfences         # 增强代码块与嵌套渲染
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.arithmatex:         # 支持 LaTeX 数学公式
+      generic: true
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
